@@ -6,6 +6,8 @@ canvas {
 }
 
 body {
+  background-color: rgba(53, 53, 53, 0.5);
+  color: white;
   padding: 0;
   margin: 0;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -15,7 +17,6 @@ body {
 }
 
 header {
-  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@ header {
 }
 
 section {
-  background-color: rgba(53, 53, 53, 0.5);
+  height: 80vh;
 }
 
 /* Header */
@@ -37,18 +38,55 @@ section {
 }
 
 .about {
-
   font-size: 15px;
   background-color: rgba(53, 53, 53, 0.5);
   height: 35%;
   width: 40%;
   padding: 0px 40px;
-  margin-left: 100px;
+  margin-left: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .aboutText {
   margin: 0px;
+}
+
+/* projects */
+
+.intro {
+  border: 1px solid red;
+  padding: 100px 0px 0px 100px;
+}
+
+.introcard {
+  background-color: rgba(53, 53, 53, 0.5);
+  height: 80%;
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.projectContent {
+  font-size: 25px;
+  margin: 0px 50px;
+}
+
+/* Education */
+
+.introEdu {
+  display: flex;
+  justify-content: end;
+}
+
+.cardEdu {
+  margin-right: 200px;
 }
