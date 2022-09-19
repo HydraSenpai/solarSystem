@@ -1,4 +1,4 @@
-/* Basic Styles */
+  /* Basic Styles */
 canvas {
   position: fixed;
   top: 0;
@@ -6,22 +6,23 @@ canvas {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0);
-  padding: 20px;
-  padding-top:0px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
 header {
-  
-  font-size:35px;
   color: white;
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding-left: 20px;
+  border: 1px solid white;
+  justify-content: center;
+  padding-left: 200px;
 }
 
 section {
@@ -30,12 +31,24 @@ section {
 
 /* Header */
 
-.name {
-  background-color: rgba(53, 53, 53, 0.5);
-  height: 400px;
-  width: 500px;
+.headerName {
+  display: block;
+  font-size:55px;
 }
 
-.headerName {
+.about {
+
+  font-size: 15px;
+  background-color: rgba(53, 53, 53, 0.5);
+  height: 35%;
+  width: 40%;
+  padding: 0px 40px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutText {
   margin: 0px;
 }
